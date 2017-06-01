@@ -50,4 +50,5 @@ Steps To Get ROS Running Properly on Rhel 7 (Note: All steps apply to RHEL7 and 
 Failed because Docker install on RHEL7 is unsupported at the moment
 
 ### ROS Using Snap Packages
-Failed because snapd requires dnf, which is currently unsupported for RHEL7
+* Installed dnf `sudo yum install dnf `
+* snapd is unsupported currently on RHEL7
