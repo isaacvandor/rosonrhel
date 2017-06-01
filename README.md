@@ -25,7 +25,13 @@ Steps To Get ROS Running Properly on Rhel 7 (Note: All steps apply to RHEL7 and 
 # Catkin Build System
 ## Install Prerequisites
 (Note: Must be installed individually)
-* Cmake
+* [Cmake](https://cmake.org/download/)
+ 1. Download tar.gz file
+ Navigate to location of download and run:
+ * ` tar xvzf PACKAGENAME.tar.gz `
+ * ` ./configure `
+ * ` make `
+ * ` sudo make install `
 * Python (Should already be installed)
   * catkin_pkg
   * empy
