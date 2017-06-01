@@ -49,8 +49,8 @@ Steps To Get ROS Running Properly on Rhel 7 (Note: All steps apply to RHEL7 and 
 ### ROS Using Docker Containerization
 Failed because Docker install on RHEL7 is unsupported at the moment
 
-[Docker for RHEL Installation Instructions](docs.docker.com/engine/installation/linux/rhel/)
-[Running ROS using Docker](https://store.docker.com/images/ros)
+* [Docker for RHEL Installation Instructions](docs.docker.com/engine/installation/linux/rhel/)
+* [Running ROS using Docker](https://store.docker.com/images/ros)
 
 ### ROS Using Snap Packages
 * Installed dnf `sudo yum install dnf `
