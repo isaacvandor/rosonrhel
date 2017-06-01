@@ -21,6 +21,8 @@ Steps To Get ROS Running Properly on Rhel 7 (Note: All steps apply to RHEL7 and 
 
 # Installing ROS
 * Follow ROS source install [Instructions](http://wiki.ros.org/Installation/Source)
+
+` Use ` sudo yum pip install ____ ` to install all required dependencies `
     
 # Catkin Build System
 ## Install Prerequisites
