@@ -1,6 +1,6 @@
 # ROS on RHEL7
 
-### Steps To Get ROS Running Properly on Rhel 7 (Note: All steps apply to RHEL7 and have not been verified with RHEL6 or other Fedora-based distros)
+Steps To Get ROS Running Properly on Rhel 7 (Note: All steps apply to RHEL7 and have not been verified with RHEL6 or other Fedora-based distros)
 
 # Prerequisites
 *Install Rhel 7
