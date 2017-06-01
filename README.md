@@ -5,7 +5,8 @@ Steps To Get ROS Running Properly on Rhel 7 (Note: All steps apply to RHEL7 and 
 
 # Prerequisites
 *Install Rhel 7
-(For this tutorial, RHEL7 installed via virtualbox)
+[For this tutorial, RHEL7 installed via virtualbox](https://www.virtualbox.org/wiki/Downloads)
+
 
 1. Install EPEL (Extra Packages) and Free/Nonfree packages for RHEL7:
   * [Tutorial Link](https://www.cyberciti.biz/faq/installing-rhel-epel-repo-on-centos-redhat-7-x/)
