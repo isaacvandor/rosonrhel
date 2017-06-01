@@ -42,3 +42,12 @@ Steps To Get ROS Running Properly on Rhel 7 (Note: All steps apply to RHEL7 and 
 * [GNU C++](https://gcc.gnu.org/) 
 ## Install Catkin Build System from Source
 [Follow Section 2.2 Install from Source](http://wiki.ros.org/catkin)
+
+
+## Other Attempts:
+
+### ROS Using Docker Containerization
+Failed because Docker install on RHEL7 is unsupported at the moment
+
+### ROS Using Snap Packages
+Failed because snapd requires dnf, which is currently unsupported for RHEL7
