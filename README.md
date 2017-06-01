@@ -14,8 +14,12 @@ Steps To Get ROS Running Properly on Rhel 7 (Note: All steps apply to RHEL7 and 
   
  ` sudo yum localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-7.noarch.rpm `
 
-2. Install Python (If not already installed)
+2. [Install Python (If not already installed)](https://packaging.python.org/install_requirements_linux/)
 3. Install Python-docutils
+* subscription-manager register --auto-attach
+* subscription-manager attach --auto
+* subscription-manager repos --enable rhel-7-server-optional-rpms --enable rhel-7-server-extras-rpms
+
 4. Install Pip
   * Use ` sudo yum pip install ____ ` to install all required dependencies
   * Note: Most packages needed for installation can be installed through [PyPi](https://pypi.python.org/pypi)
