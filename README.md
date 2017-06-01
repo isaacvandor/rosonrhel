@@ -21,7 +21,7 @@ Steps To Get ROS Running Properly on Rhel 7 (Note: All steps apply to RHEL7 and 
 * subscription-manager attach --auto
 * subscription-manager repos --enable rhel-7-server-optional-rpms --enable rhel-7-server-extras-rpms
 
-4. Install Pip
+4. [Install Pip](https://www.liquidweb.com/kb/how-to-install-pip-on-centos-7/)
   * Use ` sudo yum pip install ____ ` to install all required dependencies
   * Note: Most packages needed for installation can be installed through [PyPi](https://pypi.python.org/pypi)
 
