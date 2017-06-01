@@ -20,7 +20,7 @@ Steps To Get ROS Running Properly on Rhel 7 (Note: All steps apply to RHEL7 and 
   * Note: Most packages needed for installation can be installed through [PyPi](https://pypi.python.org/pypi)
 
 # Installing ROS
-* Follow ROS source install [Instructions](http://wiki.ros.org/Installarosdep install --from-paths src --ignore-src --rosdistro indigo --os=fedora:21 `tion/Source)
+* Follow ROS source install [Instructions](http://wiki.ros.org/Installation/Source)
 
 ` Use ` sudo yum pip install ____ ` to install all required dependencies `
 
