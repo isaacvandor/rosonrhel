@@ -57,4 +57,4 @@ Failed because Docker install on RHEL7 is unsupported at the moment
 
 ### ROS Using Snap Packages
 * Installed dnf `sudo yum install dnf `
-* snapd is unsupported currently on RHEL7
+* [snapd is unsupported currently on RHEL7](https://snapcraft.io/docs/core/install)
