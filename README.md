@@ -30,7 +30,7 @@ Steps To Get ROS Running Properly on Rhel 7 (Note: All steps apply to RHEL7 and 
 
 ` Use ` sudo yum pip install ____ ` to install all required dependencies `
 
-Under the resolving dependencies section, run ` rosdep install --from-paths src --ignore-src --rosdistro indigo --os=fedora:21 `
+Under the resolving dependencies section, run ` rosdep install --from-paths src --ignore-src --rosdistro <ENTER YOUR DISTRO HERE> --os=fedora:21 `
     
 # Catkin Build System
 ## Install Prerequisites
