@@ -69,6 +69,7 @@ Failed because Docker install on RHEL7 is unsupported at the moment
 * [Docker Store ROS Page](https://store.docker.com/images/ros)
 * [OSRF Docker Images](https://github.com/osrf/docker_images)
 * [ROS Documentation on Docker](http://wiki.ros.org/docker)
+* [ROS + Docker Tutorial](http://wiki.ros.org/docker/Tutorials/Docker)
 
 
 ## Steps
