@@ -48,6 +48,7 @@ Under the resolving dependencies section, run ` rosdep install --from-paths src 
   * [nose](https://nose.readthedocs.io/en/latest/)
 * [gtest](http://wiki.ros.org/gtest)
 * [GNU C++](https://gcc.gnu.org/) 
+
 ## Install Catkin Build System from Source
 [Follow Section 2.2 Install from Source](http://wiki.ros.org/catkin)
 
@@ -96,6 +97,8 @@ Failed because Docker install on RHEL7 is unsupported at the moment
    ` rostopic list `
    
 ROS should now be running in a Docker container with a master node. See link below to learn to develop new nodes etc.
+[ROS Tutorials](http://wiki.ros.org/ROS/Tutorials)
+
 
 ### ROS Using Snap Packages
 * Installed dnf `sudo yum install dnf `
