@@ -88,7 +88,7 @@ Failed because Docker install on RHEL7 is unsupported at the moment
 8. Check for any active docker containers
    ` docker ps -l `
 9. Run container in new terminal window
-   ` docker exec -it <YOUR ID NAME HERE> bash
+   ` docker exec -it YOUR ID NAME HERE bash
 10. Source new ROS container
    ` source /ros_entrypoint.sh `
 11. Verify ROS is running properly
