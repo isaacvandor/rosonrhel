@@ -56,7 +56,7 @@ Under the resolving dependencies section, run ` rosdep install --from-paths src 
 ## Other Attempts:
 
 ### ROS Using Docker Containerization
-Failed because Docker install on RHEL7 is unsupported at the moment
+Failed because Docker install on RHEL7 is *technically* unsupported at the moment (see below)
 
 * [Docker for RHEL Installation Instructions](docs.docker.com/engine/installation/linux/rhel/)
 * [Running ROS using Docker](https://store.docker.com/images/ros)
@@ -74,6 +74,7 @@ Failed because Docker install on RHEL7 is unsupported at the moment
 
 
 ## Steps
+(Note that most, if not all, of these machines will require sudo command. It is easiest to complete this install as the root user of the machine.)
 1. Pull latest ROS image from Docker
    ` sudo yum install docker-engine `
 2. Start Docker Engine
