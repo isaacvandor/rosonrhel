@@ -108,4 +108,5 @@ ROS should now be running in a Docker container with a master node. See link bel
 
 ### ROS Using Red Hat Openshift Containers
 * [One potentially useful link](https://github.com/worldline/openshift-ros)
+* [A blog post on it](https://blog.zhaw.ch/icclab/the-intricacies-of-running-containers-on-openshift/)
 * Althought it may work, open-shift is built on docker anyway and Docker enjos more support and a much larger userbase)
