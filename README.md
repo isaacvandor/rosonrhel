@@ -100,6 +100,19 @@ Failed because Docker install on RHEL7 is *technically* unsupported at the momen
 ROS should now be running in a Docker container with a master node. See link below to learn to develop new nodes etc.
 [ROS Tutorials](http://wiki.ros.org/ROS/Tutorials)
 
+Some Notes on running ROS:
+* Each time you open a new terminal window, you will need to run 
+` docker ps -l `
+` docker exec NAME OF ROS CONTAINER HERE bash `
+` cd ~/catkin_ws/ `
+` source ./devel/setup.bash `
+
+Common fixes:
+* [catkin_make command not found](http://answers.ros.org/question/212492/catkin_make-command-not-found/)
+* [roscd Beginner_tutorials issue](http://answers.ros.org/question/65003/roscd-no-such-packagestack-beginner_tutorials/)
+* [A good Docker resource](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04)
+* [Cmakelist.txt causing cmake command to fail](http://answers.ros.org/question/66392/add_message_files-directory-not-found/)
+
 ## Other Other Attempts
 
 ### ROS Using Snap Packages
