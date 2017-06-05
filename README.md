@@ -100,7 +100,12 @@ Failed because Docker install on RHEL7 is *technically* unsupported at the momen
 ROS should now be running in a Docker container with a master node. See link below to learn to develop new nodes etc.
 [ROS Tutorials](http://wiki.ros.org/ROS/Tutorials)
 
+## Other Other Attempts
 
 ### ROS Using Snap Packages
 * Installed dnf `sudo yum install dnf `
 * [snapd is unsupported currently on RHEL7](https://snapcraft.io/docs/core/install)
+
+### ROS Using Red Hat Openshift Containers
+* [One potentially useful link](https://github.com/worldline/openshift-ros)
+* Althought it may work, open-shift is built on docker anyway and Docker enjos more support and a much larger userbase)
