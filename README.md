@@ -25,44 +25,6 @@ Steps To Get ROS Running Properly on Rhel 7 (Note: All steps apply to RHEL7 and 
   * Use ` sudo yum pip install ____ ` to install all required dependencies
   * Note: Most packages needed for installation can be installed through [PyPi](https://pypi.python.org/pypi)
 
-# Installing ROS
-* Follow ROS source install [Instructions](http://wiki.ros.org/Installation/Source)
-
-` Use ` sudo yum pip install ____ ` to install all required dependencies `
-
-Under the resolving dependencies section, run ` rosdep install --from-paths src --ignore-src --rosdistro <ENTER YOUR DISTRO HERE> --os=fedora:21 `
-    
-# Catkin Build System
-## Install Prerequisites
-(Note: Must be installed individually and most can be installed using ` sudo yum pip install ____ ` to install all required dependencies)
-* [Cmake](https://cmake.org/download/)
- 1. Download tar.gz file
- Navigate to location of download and run:
- * ` tar xvzf PACKAGENAME.tar.gz `
- * ` ./configure `
- * ` make `
- * ` sudo make install `
-* Python (Should already be installed)
-  * [catkin_pkg](http://wiki.ros.org/catkin_pkg)
-  * [empy](http://www.alcyone.com/pyos/empy/)
-  * [nose](https://nose.readthedocs.io/en/latest/)
-* [gtest](http://wiki.ros.org/gtest)
-* [GNU C++](https://gcc.gnu.org/) 
-
-## Install Catkin Build System from Source
-[Follow Section 2.2 Install from Source](http://wiki.ros.org/catkin)
-
-
-## Other Attempts:
-
-### ROS Using Docker Containerization
-Failed because Docker install on RHEL7 is *technically* unsupported at the moment (see below)
-
-* [Docker for RHEL Installation Instructions](docs.docker.com/engine/installation/linux/rhel/)
-* [Running ROS using Docker](https://store.docker.com/images/ros)
-
-# Success!
-
 ## Install Docker on RHEL7
 * [Docker Rhel7 Install Instructions](http://docs.master.dockerproject.org/engine/installation/linux/rhel/)
 
@@ -111,15 +73,48 @@ Common fixes:
 * [catkin_make command not found](http://answers.ros.org/question/212492/catkin_make-command-not-found/)
 * [roscd Beginner_tutorials issue](http://answers.ros.org/question/65003/roscd-no-such-packagestack-beginner_tutorials/)
 * [A good Docker resource](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04)
-* [Cmakelist.txt causing cmake command to fail](http://answers.ros.org/question/66392/add_message_files-directory-not-found/)
+* [Cmakelist.txt causing cmake command to fail](http://answers.ros.org/question/66392/add_message_files-directory-not-found
 
-## Other Other Attempts
+## Docker Successful Functionality Tests
+* Copying files from host machine to  and vice versa
+   ` docker cp <containerId>:/file/path/within/container /host/path/target `
+* IP Address of specific docker container
+   ` docker network inspect bridge ` (Note: All docker containers automatically connect to bridge network unless otherwise specified)
+# Other Possibilities
 
-### ROS Using Snap Packages
+## Installing ROS locally
+* Follow ROS source install [Instructions](http://wiki.ros.org/Installation/Source)
+
+` Use ` sudo yum pip install ____ ` to install all required dependencies `
+
+Under the resolving dependencies section, run ` rosdep install --from-paths src --ignore-src --rosdistro <ENTER YOUR DISTRO HERE> --os=fedora:21 `
+    
+### Catkin Build System
+Install Prerequisites
+(Note: Must be installed individually and most can be installed using ` sudo yum pip install ____ ` to install all required dependencies)
+* [Cmake](https://cmake.org/download/)
+ 1. Download tar.gz file
+ Navigate to location of download and run:
+ * ` tar xvzf PACKAGENAME.tar.gz `
+ * ` ./configure `
+ * ` make `
+ * ` sudo make install `
+* Python (Should already be installed)
+  * [catkin_pkg](http://wiki.ros.org/catkin_pkg)
+  * [empy](http://www.alcyone.com/pyos/empy/)
+  * [nose](https://nose.readthedocs.io/en/latest/)
+* [gtest](http://wiki.ros.org/gtest)
+* [GNU C++](https://gcc.gnu.org/) 
+
+## Install Catkin Build System from Source
+[Follow Section 2.2 Install from Source](http://wiki.ros.org/catkin)
+
+
+## ROS Using Snap Packages
 * Installed dnf `sudo yum install dnf `
 * [snapd is unsupported currently on RHEL7](https://snapcraft.io/docs/core/install)
 
-### ROS Using Red Hat Openshift Containers
+## ROS Using Red Hat Openshift Containers
 * [One potentially useful link](https://github.com/worldline/openshift-ros)
 * [A blog post on it](https://blog.zhaw.ch/icclab/the-intricacies-of-running-containers-on-openshift/)
 * Althought it may work, open-shift is built on docker anyway and Docker enjos more support and a much larger userbase)
