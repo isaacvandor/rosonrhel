@@ -73,7 +73,7 @@ Common fixes:
 * [catkin_make command not found](http://answers.ros.org/question/212492/catkin_make-command-not-found/)
 * [roscd Beginner_tutorials issue](http://answers.ros.org/question/65003/roscd-no-such-packagestack-beginner_tutorials/)
 * [A good Docker resource](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04)
-* [Cmakelist.txt causing cmake command to fail](http://answers.ros.org/question/66392/add_message_files-directory-not-found
+* [Cmakelist.txt causing cmake command to fail](http://answers.ros.org/question/66392/add_message_files-directory-not-found)
 
 ## Docker Successful Functionality Tests
 * Copying files from host machine to  and vice versa
@@ -106,7 +106,7 @@ Install Prerequisites
 * [gtest](http://wiki.ros.org/gtest)
 * [GNU C++](https://gcc.gnu.org/) 
 
-## Install Catkin Build System from Source
+### Install Catkin Build System from Source
 [Follow Section 2.2 Install from Source](http://wiki.ros.org/catkin)
 
 
